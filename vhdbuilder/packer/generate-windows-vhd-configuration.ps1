@@ -101,9 +101,11 @@ $global:imagesToPull += @(
     "mcr.microsoft.com/windows/servercore/iis:latest",
 
     # CSI. Owner: andyzhangx (Andy Zhang)
-    "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.14.0", # for k8s 1.30+
+    "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.14.0", # for k8s 1.28+
+    "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.15.0", # for k8s 1.29+
 
-    "mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.12.0", # for k8s 1.30+
+    "mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.12.0", # for k8s 1.28+
+    "mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.13.0", # for k8s 1.29+
 
     "mcr.microsoft.com/oss/kubernetes-csi/azuredisk-csi:v1.29.10-windows-hp", # for k8s 1.28.x
     "mcr.microsoft.com/oss/kubernetes-csi/azuredisk-csi:v1.29.12-windows-hp", # for k8s 1.28.x
